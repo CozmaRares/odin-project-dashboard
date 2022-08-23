@@ -8,67 +8,111 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <nav
-      class="bg-sky-400 text-white p-16 text-xl flex justify-between flex-col min-w-fit row-span-full"
-    >
-      <h1 class="text-4xl flex gap-4 items-center">
-        <img src="assets/view-dashboard.png" alt="dashboard image" />
-        Dashboard
-      </h1>
-      <ul>
-        <li>
-          <img src="assets/home.png" alt="home image" />
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <img
-            src="assets/card-account-details-outline.png"
-            alt="profile image"
-          />
-          <a href="#">Profile</a>
-        </li>
-        <li>
-          <img src="assets/message.png" alt="messages image" />
-          <a href="#">Messages</a>
-        </li>
-        <li>
-          <img src="assets/clock.png" alt="history image"">
-          <a href="#">History</a>
-        </li>
-        <li>
-          <img src="assets/clipboard-multiple.png" alt="tasks image" />
-          <a href="#">Tasks</a>
-        </li>
-        <li>
-          <img src="assets/account-group.png" alt="community image" />
-          <a href="#">Community</a>
-        </li>
-      </ul>
-      <ul class="">
-        <li>
-          <img src="assets/cog.png" alt="settings image" />
-          <a href="#">Settings</a>
-        </li>
-        <li>
-          <img src="assets/message-question.png" alt="support image" />
-          <a href="#">Support</a>
-        </li>
-        <li>
-          <img src="assets/shield-check.png" alt="privacy image" />
-          <a href="#">Privacy</a>
-        </li>
-        <li>
-          <img src="assets/github.png" alt="github image" />
-          <a
-            href="https://github.com/CozmaRares/odin-project-dashboard"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Github</a
-          >
-        </li>
-      </ul>
+    <nav class="bg-sky-400 text-white text-xl w-fit row-span-full">
+      <div class="flex justify-between flex-col h-[100vh] w-fit p-10">
+        <h1 class="text-4xl flex gap-4 items-center">
+          <img src="assets/view-dashboard.png" alt="dashboard image" />
+          Dashboard
+        </h1>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <img src="assets/home.png" alt="home image" />
+          </li>
+          <li>
+            <a href="#">Profile</a>
+            <img
+              src="assets/card-account-details-outline.png"
+              alt="profile image"
+            />
+          </li>
+          <li>
+            <a href="#">Messages</a>
+            <img src="assets/message.png" alt="messages image" />
+          </li>
+          <li>
+            <a href="#">History</a>
+            <img src="assets/clock.png" alt="history image"">
+          </li>
+          <li>
+            <a href="#">Tasks</a>
+            <img src="assets/clipboard-multiple.png" alt="tasks image" />
+          </li>
+          <li>
+            <a href="#">Community</a>
+            <img src="assets/account-group.png" alt="community image" />
+          </li>
+        </ul>
+        <ul class="">
+          <li>
+            <a href="#">Settings</a>
+            <img src="assets/cog.png" alt="settings image" />
+          </li>
+          <li>
+            <a href="#">Support</a>
+            <img src="assets/message-question.png" alt="support image" />
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+            <img src="assets/shield-check.png" alt="privacy image" />
+          </li>
+          <li>
+            <a
+              href="https://github.com/CozmaRares/odin-project-dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Github</a
+            >
+            <img src="assets/github.png" alt="github image" />
+          </li>
+        </ul>
+      </div>
     </nav>
-    <header class="bg-red-400">aaaa</header>
-    <main>abasd</main>
+    <header class="bg-white grid grid-cols-[2fr,1fr] auto-rows-auto px-12 py-6">
+      <div class="flex items-center">
+        <label for="search" class="cursor-pointer">
+          <img src="assets/magnify.png" alt="search icon" />
+        </label>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search project"
+          autocomplete="off"
+          class="bg-slate-200 rounded-[50rem] px-6 py-1 flex-1 outline-none"
+        />
+      </div>
+      <div class="flex justify-center items-center gap-8">
+        <img
+          class="bell h-7"
+          src="assets/bell-ring-outline.png"
+          alt="bell icon"
+        />
+        <img
+          src="assets/gnome.jpg"
+          alt="profile picture"
+          class="h-12 rounded-[50rem]"
+        />
+        <p class="inline text-3xl font-bold">Gnome</p>
+      </div>
+
+      <div
+        class="mt-4 grid grid-cols-[auto,1fr] grid-rows-[auto,1fr] gap-x-4 gap-y-1"
+      >
+        <img
+          src="assets/gnome.jpg"
+          alt="profile picture"
+          class="h-20 rounded-[50rem] row-span-full"
+        />
+        <p class="text-sm font-semibold mt-2">Hi there,</p>
+        <p class="text-3xl font-extrabold">Gnome (@RainbowWEK)</p>
+      </div>
+      <div class="flex justify-between items-center p-5 pt-8">
+        <button class="tw-header-btn">New</button>
+        <button class="tw-header-btn">Upload</button>
+        <button class="tw-header-btn">Share</button>
+      </div>
+    </header>
+    <main class="bg-slate-200">abasd</main>
   </body>
 </html>

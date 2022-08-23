@@ -20,18 +20,15 @@ nav ul li {
   align-items: center;
   width: fit-content;
   padding: 0.375rem 0;
+  flex-direction: row-reverse;
 }
 
 nav ul li img {
   transition: transform 300ms ease;
 }
 
-nav ul li:hover img {
-  transform: rotate(360deg);
-}
-
 nav ul li a {
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 
 nav ul li a:hover {
@@ -39,4 +36,32 @@ nav ul li a:hover {
 
   border-bottom: var(--border-width) solid white;
   margin-bottom: calc(-1 * var(--border-width));
+}
+
+nav ul li a:hover + img {
+  transform: rotate(360deg);
+}
+
+.bell:hover {
+  --tilt: 30deg;
+  animation: sway 200ms 2;
+  cursor: pointer;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(calc(-1 * var(--tilt)));
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(var(--tilt));
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
