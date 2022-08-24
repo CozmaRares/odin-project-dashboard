@@ -11,50 +11,50 @@
     <nav class="bg-sky-400 text-white text-xl w-fit row-span-full">
       <div class="flex justify-between flex-col h-[100vh] w-fit p-10">
         <h1 class="text-4xl flex gap-4 items-center">
-          <img src="assets/view-dashboard.png" alt="dashboard image" />
+          <img src="assets/icons/view-dashboard.png" alt="dashboard image" />
           Dashboard
         </h1>
         <ul>
           <li>
             <a href="#">Home</a>
-            <img src="assets/home.png" alt="home image" />
+            <img src="assets/icons/home.png" alt="home image" />
           </li>
           <li>
             <a href="#">Profile</a>
             <img
-              src="assets/card-account-details-outline.png"
+              src="assets/icons/card-account-details-outline.png"
               alt="profile image"
             />
           </li>
           <li>
             <a href="#">Messages</a>
-            <img src="assets/message.png" alt="messages image" />
+            <img src="assets/icons/message.png" alt="messages image" />
           </li>
           <li>
             <a href="#">History</a>
-            <img src="assets/clock.png" alt="history image"">
+            <img src="assets/icons/clock.png" alt="history image"">
           </li>
           <li>
             <a href="#">Tasks</a>
-            <img src="assets/clipboard-multiple.png" alt="tasks image" />
+            <img src="assets/icons/clipboard-multiple.png" alt="tasks image" />
           </li>
           <li>
             <a href="#">Community</a>
-            <img src="assets/account-group.png" alt="community image" />
+            <img src="assets/icons/account-group.png" alt="community image" />
           </li>
         </ul>
         <ul class="">
           <li>
             <a href="#">Settings</a>
-            <img src="assets/cog.png" alt="settings image" />
+            <img src="assets/icons/cog.png" alt="settings image" />
           </li>
           <li>
             <a href="#">Support</a>
-            <img src="assets/message-question.png" alt="support image" />
+            <img src="assets/icons/message-question.png" alt="support image" />
           </li>
           <li>
             <a href="#">Privacy</a>
-            <img src="assets/shield-check.png" alt="privacy image" />
+            <img src="assets/icons/shield-check.png" alt="privacy image" />
           </li>
           <li>
             <a
@@ -63,7 +63,7 @@
               rel="noopener noreferrer"
               >Github</a
             >
-            <img src="assets/github.png" alt="github image" />
+            <img src="assets/icons/github.png" alt="github image" />
           </li>
         </ul>
       </div>
@@ -71,7 +71,7 @@
     <header class="bg-white grid grid-cols-[2fr,1fr] auto-rows-auto px-12 py-6">
       <div class="flex items-center">
         <label for="search" class="cursor-pointer">
-          <img src="assets/magnify.png" alt="search icon" />
+          <img src="assets/icons/magnify.png" alt="search icon" />
         </label>
         <input
           type="text"
@@ -85,27 +85,27 @@
       <div class="flex justify-center items-center gap-8">
         <img
           class="bell h-7"
-          src="assets/bell-ring-outline.png"
+          src="assets/icons/bell-ring-outline.png"
           alt="bell icon"
         />
         <img
-          src="assets/gnome.jpg"
+          src="assets/pfp/gnome.jpg"
           alt="profile picture"
-          class="h-12 rounded-[50rem]"
+          class="h-12 rounded-[50%]"
         />
         <p class="inline text-3xl font-bold">Gnome</p>
       </div>
 
-      <div
-        class="mt-4 grid grid-cols-[auto,1fr] grid-rows-[auto,1fr] gap-x-4 gap-y-1"
-      >
+      <div class="mt-4 flex flex-row gap-4 items-center">
         <img
-          src="assets/gnome.jpg"
+          src="assets/pfp/gnome.jpg"
           alt="profile picture"
-          class="h-20 rounded-[50rem] row-span-full"
+          class="h-20 rounded-[50%]"
         />
-        <p class="text-sm font-semibold mt-2">Hi there,</p>
-        <p class="text-3xl font-extrabold">Gnome (@RainbowWEK)</p>
+        <div class="h-fit">
+          <p class="text-sm font-semibold">Hi there,</p>
+          <p class="text-3xl font-extrabold">Gnome (@RainbowWEK)</p>
+        </div>
       </div>
       <div class="flex justify-between items-center p-5 pt-8">
         <button class="tw-header-btn">New</button>
@@ -113,6 +113,78 @@
         <button class="tw-header-btn">Share</button>
       </div>
     </header>
-    <main class="bg-slate-200">abasd</main>
+    <main
+      class="bg-slate-200 grid grid-cols-[3fr,1fr] grid-rows-[auto,1fr] px-16 pt-8 gap-y-4 text-"
+    >
+      <div class="row-span-full">
+        <p>Your projects</p>
+      </div>
+      <div class="announcements">
+        <p>Announcements</p>
+        <ul class="bg-white px-8 py-4 rounded-2xl">
+          <li>
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              cupiditate, eveniet suscipit aspernatur odit fugiat dolore labore
+              voluptatibus delectus veritatis ea sunt quidem voluptatem unde hic
+              excepturi? Explicabo, quisquam id.
+            </p>
+          </li>
+          <li>
+            <h3>Community Share Day</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              sint officiis quos obcaecati molestiae, esse sed similique ipsam
+              hic laboriosam explicabo neque natus, enim nihil temporibus unde
+              sunt optio debitis?
+            </p>
+          </li>
+          <li>
+            <h3>Updated Privacy Policy</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repudiandae, aut. Quo maxime ad ratione voluptates reiciendis.
+              Nihil obcaecati non, quos possimus, distinctio repellat nesciunt
+              est at sed, fuga culpa quae.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="trending">
+        <p>Trending</p>
+        <ul class="bg-white px-8 py-4 rounded-2xl">
+          <li>
+            <img src="assets/pfp/bill.jpg" alt="profile picture 1" />
+            <div>
+              <p>@enlightened</p>
+              <p>World Peace Builder</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="assets/pfp/stan.jpg" alt="profile picture 2" />
+            <div>
+              <p>@scammer</p>
+              <p>Interrupted</p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/pfp/pig.jpg" alt="profile picture 3" />
+            <div>
+              <p>@glasses</p>
+              <p>Smort pig</p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/pfp/dipper.jpg" alt="profile picture 4" />
+            <div>
+              <p>@notastalker</p>
+              <p>Looking at YOU</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
