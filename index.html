@@ -11,50 +11,50 @@
     <nav class="bg-sky-400 text-white text-xl w-fit row-span-full">
       <div class="flex justify-between flex-col h-[100vh] w-fit p-10">
         <h1 class="text-4xl flex gap-4 items-center">
-          <img src="assets/icons/view-dashboard.png" alt="dashboard image" />
+          <img src="assets/icons/view-dashboard.png" alt="dashboard" />
           Dashboard
         </h1>
         <ul>
           <li>
             <a href="#">Home</a>
-            <img src="assets/icons/home.png" alt="home image" />
+            <img src="assets/icons/home.png" alt="home" />
           </li>
           <li>
             <a href="#">Profile</a>
             <img
               src="assets/icons/card-account-details-outline.png"
-              alt="profile image"
+              alt="profile"
             />
           </li>
           <li>
             <a href="#">Messages</a>
-            <img src="assets/icons/message.png" alt="messages image" />
+            <img src="assets/icons/message.png" alt="messages" />
           </li>
           <li>
             <a href="#">History</a>
-            <img src="assets/icons/clock.png" alt="history image"">
+            <img src="assets/icons/clock.png" alt="history" />
           </li>
           <li>
             <a href="#">Tasks</a>
-            <img src="assets/icons/clipboard-multiple.png" alt="tasks image" />
+            <img src="assets/icons/clipboard-multiple.png" alt="tasks" />
           </li>
           <li>
             <a href="#">Community</a>
-            <img src="assets/icons/account-group.png" alt="community image" />
+            <img src="assets/icons/account-group.png" alt="community" />
           </li>
         </ul>
         <ul class="">
           <li>
             <a href="#">Settings</a>
-            <img src="assets/icons/cog.png" alt="settings image" />
+            <img src="assets/icons/cog.png" alt="settings" />
           </li>
           <li>
             <a href="#">Support</a>
-            <img src="assets/icons/message-question.png" alt="support image" />
+            <img src="assets/icons/message-question.png" alt="support" />
           </li>
           <li>
             <a href="#">Privacy</a>
-            <img src="assets/icons/shield-check.png" alt="privacy image" />
+            <img src="assets/icons/shield-check.png" alt="privacy" />
           </li>
           <li>
             <a
@@ -63,7 +63,7 @@
               rel="noopener noreferrer"
               >Github</a
             >
-            <img src="assets/icons/github.png" alt="github image" />
+            <img src="assets/icons/github.png" alt="github" />
           </li>
         </ul>
       </div>
@@ -76,29 +76,25 @@
           id="search"
           placeholder="Search project"
           autocomplete="off"
-          class="bg-slate-200 rounded-l-full pl-6 py-1 flex-1 outline-none h-full border-2 border-slate-400"
+          class="tw-search-bar"
         />
         <label
           for="search"
-          class="cursor-pointer bg-slate-400 h-full flex items-center px-4 rounded-r-full"
+          class="cursor-pointer bg-slate-200 h-full flex items-center px-4 rounded-r-full"
         >
-          <img
-            src="assets/icons/magnify.png"
-            alt="search icon"
-            class="h-[1.7em]"
-          />
+          <img src="assets/icons/magnify.png" alt="search" class="h-[1.7em]" />
         </label>
       </div>
       <div class="flex justify-center items-center gap-8">
         <img
           class="bell h-7"
           src="assets/icons/bell-ring-outline.png"
-          alt="bell icon"
+          alt="bell"
         />
         <img
           src="assets/pfp/gnome.jpg"
           alt="profile picture"
-          class="h-12 rounded-[50%]"
+          class="h-12 rounded-full"
         />
         <p class="inline text-3xl font-bold">Gnome</p>
       </div>
@@ -107,7 +103,7 @@
         <img
           src="assets/pfp/gnome.jpg"
           alt="profile picture"
-          class="h-20 rounded-[50%]"
+          class="h-20 rounded-full"
         />
         <div class="h-fit">
           <p class="text-sm font-semibold">Hi there,</p>
@@ -121,17 +117,18 @@
       </div>
     </header>
     <main
-      class="bg-slate-200 grid grid-cols-[4fr,1fr] grid-rows-[auto,1fr] px-16 pt-8 gap-y-4"
+      class="bg-slate-200 grid grid-cols-[4fr,1fr] grid-rows-[auto,1fr] px-16 pt-8 gap-x-4 gap-y-8"
     >
       <div class="row-span-full">
         <p>Your projects</p>
+        <div id="projects"></div>
       </div>
-      <div class="announcements">
+      <div>
         <p>Announcements</p>
-        <ul class="bg-white px-8 py-4 rounded-2xl">
+        <ul id="announcements" class="px-8 py-4 rounded-2xl">
           <li>
             <h3>Site Maintenance</h3>
-            <p>
+            <p class="fade-out">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               cupiditate, eveniet suscipit aspernatur odit fugiat dolore labore
               voluptatibus delectus veritatis ea sunt quidem voluptatem unde hic
@@ -140,7 +137,7 @@
           </li>
           <li>
             <h3>Community Share Day</h3>
-            <p>
+            <p class="fade-out">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               sint officiis quos obcaecati molestiae, esse sed similique ipsam
               hic laboriosam explicabo neque natus, enim nihil temporibus unde
@@ -149,7 +146,7 @@
           </li>
           <li>
             <h3>Updated Privacy Policy</h3>
-            <p>
+            <p class="fade-out">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Repudiandae, aut. Quo maxime ad ratione voluptates reiciendis.
               Nihil obcaecati non, quos possimus, distinctio repellat nesciunt
@@ -158,11 +155,11 @@
           </li>
         </ul>
       </div>
-      <div class="trending">
+      <div>
         <p>Trending</p>
-        <ul class="bg-white px-8 py-4 rounded-2xl">
+        <ul id="trending" class="bg-white px-8 py-4 rounded-2xl">
           <li>
-            <img src="assets/pfp/bill.jpg" alt="profile picture 1" />
+            <img src="assets/pfp/bill.jpg" alt="trending profile picture 1" />
             <div>
               <p>@enlightened</p>
               <p>World Peace Builder</p>
@@ -170,21 +167,21 @@
           </li>
 
           <li>
-            <img src="assets/pfp/stan.jpg" alt="profile picture 2" />
+            <img src="assets/pfp/stan.jpg" alt="trending profile picture 2" />
             <div>
               <p>@scammer</p>
               <p>Interrupted</p>
             </div>
           </li>
           <li>
-            <img src="assets/pfp/pig.jpg" alt="profile picture 3" />
+            <img src="assets/pfp/pig.jpg" alt="trending profile picture 3" />
             <div>
               <p>@glasses</p>
               <p>Smort pig</p>
             </div>
           </li>
           <li>
-            <img src="assets/pfp/dipper.jpg" alt="profile picture 4" />
+            <img src="assets/pfp/dipper.jpg" alt="trending profile picture 4" />
             <div>
               <p>@notastalker</p>
               <p>Looking at YOU</p>
@@ -194,4 +191,97 @@
       </div>
     </main>
   </body>
+  <script defer>
+    const lorem = [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus.",
+      "Id volutpat lacus laoreet non curabitur gravida.",
+      "Non diam phasellus vestibulum lorem sed risus.",
+      "Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies.",
+      "Rhoncus mattis rhoncus urna neque.",
+      "Facilisi etiam dignissim diam quis enim.",
+      "Quam vulputate dignissim suspendisse in est ante in.",
+      "Scelerisque purus semper eget duis at tellus.",
+      "Vitae aliquet nec ullamcorper sit.",
+      "Tempus quam pellentesque nec nam aliquam sem et tortor.",
+      "Tincidunt id aliquet risus feugiat in ante metus dictum at.",
+      "Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit.",
+      "Libero enim sed faucibus turpis.",
+      "Ut eu sem integer vitae justo eget.",
+      "Nibh sit amet commodo nulla facilisi.",
+      "Risus commodo viverra maecenas accumsan lacus vel.",
+      "Praesent tristique magna sit amet purus gravida quis blandit turpis.",
+      "Mi tempus imperdiet nulla malesuada pellentesque elit.",
+      "Pellentesque dignissim enim sit amet.",
+      "Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est.",
+      "Odio morbi quis commodo odio aenean sed adipiscing diam.",
+      "Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis.",
+      "Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
+      "Risus feugiat in ante metus dictum at.",
+      "Donec enim diam vulputate ut pharetra sit amet aliquam id.",
+      "Porttitor massa id neque aliquam.",
+      "Vitae congue eu consequat ac felis donec et odio.",
+      "Duis at consectetur lorem donec massa sapien.",
+      "Auctor augue mauris augue neque gravida in fermentum et.",
+      "Amet cursus sit amet dictum sit amet justo donec enim.",
+      "Feugiat nisl pretium fusce id velit ut tortor pretium viverra.",
+      "Diam sit amet nisl suscipit adipiscing.",
+      "Blandit turpis cursus in hac.",
+      "Massa massa ultricies mi quis hendrerit dolor magna eget.",
+      "Ante in nibh mauris cursus.",
+      "Eget egestas purus viverra accumsan in nisl nisi scelerisque.",
+      "Eget nunc lobortis mattis aliquam faucibus.",
+      "Sagittis purus sit amet volutpat consequat.",
+      "Bibendum enim facilisis gravida neque.",
+      "Quam pellentesque nec nam aliquam sem et tortor.",
+      "In hac habitasse platea dictumst vestibulum rhoncus.",
+      "Pretium lectus quam id leo in vitae turpis massa.",
+      "Risus sed vulputate odio ut.",
+      "Sit amet facilisis magna etiam tempor orci.",
+      "Ac placerat vestibulum lectus mauris ultrices eros in.",
+      "Consequat id porta nibh venenatis cras.",
+      "Consectetur purus ut faucibus pulvinar.",
+      "Vivamus arcu felis bibendum ut tristique et egestas quis ipsum.",
+      "Fames ac turpis egestas integer eget."
+    ];
+
+    const randomString = () => {
+      return lorem[Math.floor(Math.random() * lorem.length)];
+    };
+
+    const projectsElement = document.querySelector("#projects");
+    const numberOfProjects = 5 + Math.floor(Math.random() * 5);
+
+    let projects = "";
+
+    for (let i = 1; i <= numberOfProjects; i++) {
+      const numberOfSentences = 2 + Math.floor(Math.random() * 8);
+
+      let description = "";
+
+      for (let j = 0; j < numberOfSentences; j++) description += randomString();
+
+      const project = `
+          <div class="project">
+            <div>
+              <div>
+                <h2>Project ${i}</h2>
+                <p class="fade-out">
+                  ${description}
+                </p>
+              </div>
+              <div class="icons">
+                <img src="assets/svg/star-plus.svg" alt="star" />
+                <img src="assets/svg/eye-plus.svg" alt="see more" />
+                <img src="assets/svg/share.svg" alt="share" />
+              </div>
+            </div>
+          </div>
+        `;
+
+      projects += project;
+    }
+
+    projectsElement.innerHTML = projects;
+  </script>
 </html>

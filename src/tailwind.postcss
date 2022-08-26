@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .tw-header-btn {
-    @apply bg-sky-400 px-4 py-1 text-white rounded-[50rem] text-xl hover:bg-sky-600 transition-[background-color] duration-200 min-w-fit;
-    width: calc((100% - 3rem) / 3);
-  }
+.tw-header-btn {
+  @apply bg-sky-400 px-4 py-1 text-white rounded-full text-xl hover:bg-sky-600 transition-[background-color] duration-200 min-w-fit;
+  width: calc((100% - 3rem) / 3);
+}
+
+.tw-search-bar {
+  @apply bg-slate-200 rounded-l-full pl-6 py-1 flex-1 outline-none h-full border-2 border-slate-200;
+}
+
+.tw-search-bar:focus {
+  @apply border-slate-400;
+}
+
+.tw-search-bar:focus + label {
+  @apply bg-slate-400;
+}
+
+.tw-search-bar:focus + label img {
+  filter: invert(100%);
 }

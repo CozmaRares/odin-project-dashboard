@@ -73,80 +73,156 @@ main > div > p {
   padding-bottom: 0.3rem;
 }
 
-.announcements li {
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.project {
+  background-color: #38bdf8;
+  border-radius: 1rem;
+  width: calc((100% - 2rem) / 2);
+}
+
+.project > div {
+  --background: white;
+
+  background-color: var(--background);
+  margin-left: 1rem;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.project h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.project p {
+  --line-height: 1.25rem;
+
+  height: calc(4 * var(--line-height));
+  font-size: 0.875rem;
+  line-height: var(--line-height);
+  padding-right: 10%;
+}
+
+.fade-out {
+  overflow: hidden;
+  position: relative;
+  color: #737373;
+}
+
+.fade-out:after {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--background) 70%
+  );
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: var(--line-height);
+}
+
+.project .icons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.project img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.project img:hover {
+  transform: scale(1.2);
+}
+
+#announcements {
+  --background: white;
+
+  background-color: var(--background);
+}
+
+#announcements li {
   width: 90%;
   padding: 0.5rem 0;
   margin: 0 auto;
 }
 
-.announcements li:not(:last-child) {
+#announcements li:not(:last-child) {
   border-bottom: 1px solid #73737384;
 }
 
-.announcements h3 {
+#announcements h3 {
   font-weight: 700;
   padding-bottom: 0.2rem;
 }
 
-.announcements li p {
+#announcements li p {
+  --line-height: 1.25rem;
+
   font-size: 0.875rem;
-  line-height: 1.25rem;
-  max-height: calc(3 * 1.25rem);
-  overflow: hidden;
-  position: relative;
-  color: #737373;
+  line-height: var(--line-height);
+  max-height: calc(3 * var(--line-height));
+
   transition-property: height, color;
   transition: 200ms ease-in;
 }
 
-.announcements li p:after {
-  content: "";
-  background-image: linear-gradient(to right, transparent, white 70%);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: calc(1.5rem);
+#announcements li p:after {
   transition: opacity 200ms ease-in;
 }
 
-.announcements li p:hover {
+#announcements li p:hover {
   max-height: 300px;
   color: black;
 }
 
-.announcements li p:hover:after {
+#announcements li p:hover:after {
   opacity: 0;
 }
 
-.trending li {
+#trending li {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
 
-.trending li:not(:first-child) {
+#trending li:not(:first-child) {
   padding-top: 0.5rem;
 }
 
-.trending img {
+#trending img {
   width: 3rem;
   grid-row: 1 / -1;
   border-radius: 9999px;
 }
 
-.trending div {
+#trending div {
   height: fit-content;
 }
 
-.trending div p {
+#trending div p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: bold;
 }
 
-.trending div p:nth-of-type(2) {
+#trending div p:nth-of-type(2) {
   margin-top: 0.1rem;
   color: #737373;
   font-weight: normal;
