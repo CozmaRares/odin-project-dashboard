@@ -69,18 +69,25 @@
       </div>
     </nav>
     <header class="bg-white grid grid-cols-[2fr,1fr] auto-rows-auto px-12 py-6">
-      <div class="flex items-center">
-        <label for="search" class="cursor-pointer">
-          <img src="assets/icons/magnify.png" alt="search icon" />
-        </label>
+      <div class="flex items-center h-[2em]">
         <input
           type="text"
           name="search"
           id="search"
           placeholder="Search project"
           autocomplete="off"
-          class="bg-slate-200 rounded-[50rem] px-6 py-1 flex-1 outline-none"
+          class="bg-slate-200 rounded-l-full pl-6 py-1 flex-1 outline-none h-full border-2 border-slate-400"
         />
+        <label
+          for="search"
+          class="cursor-pointer bg-slate-400 h-full flex items-center px-4 rounded-r-full"
+        >
+          <img
+            src="assets/icons/magnify.png"
+            alt="search icon"
+            class="h-[1.7em]"
+          />
+        </label>
       </div>
       <div class="flex justify-center items-center gap-8">
         <img
@@ -114,7 +121,7 @@
       </div>
     </header>
     <main
-      class="bg-slate-200 grid grid-cols-[3fr,1fr] grid-rows-[auto,1fr] px-16 pt-8 gap-y-4 text-"
+      class="bg-slate-200 grid grid-cols-[4fr,1fr] grid-rows-[auto,1fr] px-16 pt-8 gap-y-4"
     >
       <div class="row-span-full">
         <p>Your projects</p>
